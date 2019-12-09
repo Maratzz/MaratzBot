@@ -10,7 +10,7 @@ bot.on([/Dark Souls/, /dark souls/], (msg) => msg.reply.text('Je n\'aurais pas m
 bot.on([/shinies/, /shiny/], (msg) => msg.reply.text('https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'));
 bot.on([/sur Paris/, /sur paris/, /sur Versailles/, /sur versailles/, /sur lyon/, /sur Lyon/], (msg) => msg.reply.sticker('CAADBAADTgADqbwaFxdZN9QIWRATAg'));
 bot.on(/5\/10/, (msg) => msg.reply.text('Pisse-froid, va !'));
-bot.on([/Hmm/, /hmm/, /hrm/, /Hrm/, /Hrrm/, /hrrm/] (msg) => msg.reply.text('Pointy'));
+bot.on([/Hmm/, /hmm/, /hrm/, /Hrm/, /Hrrm/, /hrrm/], (msg) => msg.reply.text('Pointy'));
 
 // keyboard for citizenship
 bot.on(['/naturalisation'], msg => {
