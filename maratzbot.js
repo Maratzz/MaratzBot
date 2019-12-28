@@ -15,19 +15,8 @@ bot.on([/hr*m{2,}/i], (msg) => msg.reply.text('Pointy'));
 // useful links
 bot.on(['/score'], (msg) => msg.reply.text('Les Scores du Haut-Plateau: YOUR_LINK'));
 bot.on(['/liste'], (msg) => msg.reply.text('La liste pour valider ASS-3: YOUR_LINK'));
-<<<<<<< HEAD
 bot.on(['/lexique'], (msg) => msg.reply.text('Parlez-vous la francisation abusive ?: YOUR_LINK'));
 bot.on(['/relevé'], (msg) => msg.reply.text('La voiture, c\'est le futur: YOUR_LINK'));
-=======
-<<<<<<< HEAD
-bot.on(['/lexique'], (msg) => msg.reply.text('Parlez-vous la francisation abusive ?: YOUR_LINK'));
-bot.on(['/relevé'], (msg) => msg.reply.text('La voiture, c\'est le futur: YOUR_LINK'));
-=======
-bot.on(['/lexique'], (msg) => msg.reply.text('La liste pour valider ASS-3: YOUR_LINK'));
-bot.on(['/relevé'], (msg) => msg.reply.text('La liste pour valider ASS-3: YOUR_LINK'));
->>>>>>> 434c7581a1417b3de9073c3443a2f547c0799758
->>>>>>> e6b278675b13f3ddbc0748d4b97517cb4b147687
-
 
 // keyboard for citizenship
 bot.on(['/naturalisation'], msg => {
