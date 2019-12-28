@@ -6,11 +6,18 @@ bot.on(['/start'], (msg) => msg.reply.text('Je suis MaratzBot, je suis programm�
 bot.on(['/timeline'], (msg) => msg.reply.text('En tant que bot du futur venant de 20XX, je confirme que nous sommes bien dans la pire timeline 👎'));
 
 // passive listening
-bot.on([/Dark Souls/, /dark souls/], (msg) => msg.reply.text('Je n\'aurais pas mieux dit ! 💀'));
-bot.on([/shinies/, /shiny/], (msg) => msg.reply.text('https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'));
-bot.on([/sur Paris/, /sur paris/, /sur Versailles/, /sur versailles/, /sur lyon/, /sur Lyon/], (msg) => msg.reply.sticker('CAADBAADTgADqbwaFxdZN9QIWRATAg'));
+bot.on([/dark souls/i], (msg) => msg.reply.text('Je n\'aurais pas mieux dit ! 💀'));
+bot.on([/shiny?(ies)?/i], (msg) => msg.reply.text('https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'));
+bot.on([/sur paris|versailles|lyon/i], (msg) => msg.reply.sticker('CAADBAADTgADqbwaFxdZN9QIWRATAg'));
 bot.on(/5\/10/, (msg) => msg.reply.text('Pisse-froid, va !'));
-bot.on([/Hmm/, /hmm/, /hrm/, /Hrm/, /Hrrm/, /hrrm/], (msg) => msg.reply.text('Pointy'));
+bot.on([/hr*m{2,}/i], (msg) => msg.reply.text('Pointy'));
+
+// useful links
+bot.on(['/score'], (msg) => msg.reply.text('Les Scores du Haut-Plateau: YOUR_LINK'));
+bot.on(['/liste'], (msg) => msg.reply.text('La liste pour valider ASS-3: YOUR_LINK'));
+bot.on(['/lexique'], (msg) => msg.reply.text('Parlez-vous la francisation abusive ?: YOUR_LINK'));
+bot.on(['/relevé'], (msg) => msg.reply.text('La voiture, c\'est le futur: YOUR_LINK'));
+
 
 // keyboard for citizenship
 bot.on(['/naturalisation'], msg => {
@@ -38,7 +45,7 @@ bot.on(['/GG2'], (msg) => msg.reply.text('Pour devenir un citoyen de rang GG 2\n
 
 bot.on(['/GG3'], (msg) => msg.reply.text('Pour devenir un citoyen de rang GG 3\n\n1️⃣ Tenir au moins 60 secondes sur le niveau 3 de Super Hexagon\n2️⃣ Faire un shitpost graphique\n3️⃣ Montrer 33 productions écrites (critiques, 2000-word analysis, nouvelles, etc.) au Bureau d\'Investigation du Travail Connecté'));
 
-// choix pour député
+// choice for député
 bot.on(['/depute'], msg => {
     let replyMarkup = bot.keyboard([
         ['/OP1', '/OP2'],
@@ -53,7 +60,7 @@ bot.on(['/OP2'], (msg) => msg.reply.text('Pour devenir un député de rang OP 2\
 
 bot.on(['/OP3'], (msg) => msg.reply.text('Pour devenir un député de rang OP 3\n\n1️⃣ Faire une run all-zone avec 6 persos sur CotN en moins de 6 morts\n2️⃣ Montrer 66 productions écrites\n3️⃣ Avoir au moins 666 de score sur les 6 jeux réunis du Haut Plateau'));
 
-// choix pour sénateur
+// choice for sénateur
 bot.on(['/senateur'], msg => {
     let replyMarkup = bot.keyboard([
         ['/ASS1', '/ASS2'],
@@ -68,7 +75,7 @@ bot.on(['/ASS2'], (msg) => msg.reply.text('Pour devenir un sénateur de rang ASS
 
 bot.on(['/ASS3'], (msg) => msg.reply.text('Pour devenir un sénateur de rang ASS 3, niveau ultime avant la plongée dans l\'enfer du conseil constitutionnelte\n\n1️⃣ Terminer cette liste: https://onlyo.co/2wNT3ti\n2️⃣ Montrer 99 productions écrites\n3️⃣ Go beyond Uranus in Flywrench'));
 
-// choix pour conseil constitutionnel
+// choice for conseil constitutionnel
 bot.on(['/conseilconstitutionnel'], msg => {
     let replyMarkup = bot.keyboard([
         ['/SC1', '/SC2'],
