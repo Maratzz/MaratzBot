@@ -8,7 +8,7 @@ bot.on(['/timeline'], (msg) => msg.reply.text('En tant que bot du futur venant d
 // passive listening
 bot.on([/dark souls/i], (msg) => msg.reply.text('Je n\'aurais pas mieux dit ! 💀'));
 bot.on([/shiny?(ies)?/i], (msg) => msg.reply.text('https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'));
-bot.on([/sur paris|versailles|lyon/i], (msg) => msg.reply.sticker('CAADBAADTgADqbwaFxdZN9QIWRATAg'));
+bot.on([/(sur (paris|versailles|lyon))/i], (msg) => msg.reply.sticker('CAADBAADTgADqbwaFxdZN9QIWRATAg'));
 bot.on(/5\/10/, (msg) => msg.reply.text('Pisse-froid, va !'));
 bot.on([/hr*m{2,}/i], (msg) => msg.reply.text('Pointy'));
 
@@ -16,7 +16,7 @@ bot.on([/hr*m{2,}/i], (msg) => msg.reply.text('Pointy'));
 bot.on(['/score'], (msg) => msg.reply.text('Les Scores du Haut-Plateau: YOUR_LINK'));
 bot.on(['/liste'], (msg) => msg.reply.text('La liste pour valider ASS-3: YOUR_LINK'));
 bot.on(['/lexique'], (msg) => msg.reply.text('Parlez-vous la francisation abusive ?: YOUR_LINK'));
-bot.on(['/relevé'], (msg) => msg.reply.text('La voiture, c\'est le futur: YOUR_LINK'));
+bot.on(['/releve'], (msg) => msg.reply.text('La voiture, c\'est le futur: YOUR_LINK'));
 
 // keyboard for citizenship
 bot.on(['/naturalisation'], msg => {
