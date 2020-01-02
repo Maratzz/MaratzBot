@@ -86,7 +86,7 @@ bot.on(['/conseilconstitutionnel'], msg => {
 
 bot.on(['/SC1'], (msg) => msg.reply.text('Pour intégrer le conseil constitutionnel au rang SC 1\n\n1️⃣ Réussir une 9-char run\n2️⃣ Faire tous les niveaux en S sur Thumper\n3️⃣ Supprimer SC, Twitter et Facebook'));
 
-bot.on(['/SC2'], (msg) => msg.reply.text('Pour intégrer le conseil constitutionnel au rang SC 2\n\n1️⃣ Terminer 3 jeux de David Cage (The Nomad Soul exclus)\n2️⃣ Avoir 3 speedruns avec des PB à moins de 33% du WR\n3️⃣ Produire 3 vidéos shitpsot'));
+bot.on(['/SC2'], (msg) => msg.reply.text('Pour intégrer le conseil constitutionnel au rang SC 2\n\n1️⃣ Terminer 3 jeux de David Cage (The Nomad Soul exclus)\n2️⃣ Avoir 3 speedruns avec des PB à moins de 33% du WR\n3️⃣ Produire 3 vidéos shitpost'));
 
 bot.on(['/SC3'], (msg) => msg.reply.text('Pour intégrer le conseil constitutionnel au rang SC 3\n\n1️⃣ Courir le 100m en moins de 12 secondes\n2️⃣ Réussir une 13-char run\n3️⃣ Montrer 140 productions écrites'));
 
